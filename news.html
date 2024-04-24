@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <!-- Bootstrap CDN for responsive search bar -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="C:\Users\DELL\Desktop\news\news.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="new">
+        <div class="main-nav container flex">
+           <h4 class="company-logo">
+                Newsyyy
+           </h4>
+            <div class="search-bar flex">
+                <!-- Bootstrap responsive search bar -->
+                <input id="search-text" type="text" class="news-input form-control" placeholder="Search">
+                <button id="search-button" class="search-button btn btn-primary">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" class="news-img">
+            </div>
+            <div class="card-content">
+                <h3 class="news-title">This is the Title</h3>
+                <h6 class="news-source" class="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" class="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae
+                    saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+    </template>
+
+    <div id="loading-spinner" class="spinner"></div>
+
+    <script src="C:\Users\DELL\Desktop\news\news.js"></script>
+</body>
+
+</html>

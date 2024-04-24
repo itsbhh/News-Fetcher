@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf3e7;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #e0a577; 
+
+}
+.new{
+    background-color: #e0a577;
+}
+
+.nav-item {
+    cursor: pointer;
+   
+}
+
+.search-bar {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.company-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left:0px;
+    color: #333; 
+}
+
+.news-input {
+    width: 300px;
+    border-radius: 20px; 
+    padding: 10px;
+    border: 1px solid #eeeeee;
+    margin-right: 10px;
+    background-color: #fff; 
+    color: #333; 
+    outline-color: #e2e2e2;
+}
+
+#search-button {
+    border-radius: 20px; 
+    padding: 10px 20px;
+    margin-right: 30px;
+    background-color: #4b3832; 
+    color: #fff; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+#search-button :hover {
+    background-color: #372a23; 
+    outline:none;
+}
+
+
+.dark-mode body{
+    background-color: #333;
+    color: #fff;
+}
+
+
+.spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: none;
+}
+
+.spinner::before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    border-top-color: #00bcd4; 
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .main-nav {
+        padding: 20px;
+    }
+
+    .company-logo {
+        margin-bottom: 20px;
+        font-size: 15px;
+        margin-right: 5px;
+    }
+
+    .search-bar {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+#search-button{
+    font-size: 10px;
+}
+    .news-input {
+        width: 70%;
+        margin-right: 0;
+    }
+
+    #search-button {
+        margin-left: 5px;
+    }
+
+    .moon-btn {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.cards-container {
+    margin-top: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.card-header {
+    height: 200px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-content {
+    padding: 15px;
+}
+.news-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
