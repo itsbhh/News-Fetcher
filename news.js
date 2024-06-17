@@ -37,7 +37,7 @@ async function performSearch() {
 }
 
 async function displayInitialNews() {
-    const apiKey = "pub_42448ddee4ede41938d919e0b36946c91c8ed";
+    const apiKey = "pub_46550890e06a579878c0b69bea9e9843e1f0a";
     const initialUrl = `https://newsdata.io/api/1/news?&language=en&apiKey=${apiKey}`;
 
     try {
