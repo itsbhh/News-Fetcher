@@ -38,7 +38,7 @@ async function performSearch() {
 
 async function displayInitialNews() {
     const apiKey = "52095899b32347a49691263a7ea580f9";
-    const initialUrl = `https://newsapi.org/v2/everything?&language=en&apiKey=${apiKey}`;
+    const initialUrl = `https://newsapi.org/v2/everything?q=bts&apiKey=${apiKey}`;
 
     try {
         const response = await fetch(initialUrl);
