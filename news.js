@@ -15,7 +15,7 @@ async function performSearch() {
         return;
     }
 
-    const apiKey = "pub_42448ddee4ede41938d919e0b36946c91c8ed";
+    const apiKey = "pub_46550890e06a579878c0b69bea9e9843e1f0a";
     const apiUrl = `https://newsdata.io/api/1/news?q=${searchValue}&apiKey=${apiKey}`;
 
     try {
