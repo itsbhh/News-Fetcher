@@ -15,8 +15,8 @@ async function performSearch() {
         return;
     }
 
-    const apiKey = "pub_46550890e06a579878c0b69bea9e9843e1f0a";
-    const apiUrl = `https://newsdata.io/api/1/news?q=${searchValue}&apiKey=${apiKey}`;
+    const apiKey = "52095899b32347a49691263a7ea580f9";
+    const apiUrl = `https://newsapi.org/v2/everything?q=${searchValue}&apiKey=${apiKey}`;
 
     try {
         const response = await fetch(apiUrl);
@@ -37,8 +37,8 @@ async function performSearch() {
 }
 
 async function displayInitialNews() {
-    const apiKey = "pub_46550890e06a579878c0b69bea9e9843e1f0a";
-    const initialUrl = `https://newsdata.io/api/1/news?&language=en&apiKey=${apiKey}`;
+    const apiKey = "52095899b32347a49691263a7ea580f9";
+    const initialUrl = `https://newsapi.org/v2/everything?&language=en&apiKey=${apiKey}`;
 
     try {
         const response = await fetch(initialUrl);
